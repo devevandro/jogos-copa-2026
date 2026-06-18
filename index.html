@@ -232,6 +232,15 @@
       font-weight: 850;
     }
 
+    .past-match td {
+      background: #00cbfa;
+      border-bottom-color: #00a9d1;
+    }
+
+    .past-match .match {
+      color: #071b2a;
+    }
+
     .source {
       margin-top: 24px;
       color: var(--muted);
@@ -295,6 +304,48 @@
       color: var(--red);
       font-style: normal;
       font-weight: 750;
+    }
+
+    .color-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin: -8px 0 18px;
+      padding: 12px 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .color-legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .color-swatch {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 18px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+
+    .color-swatch.past {
+      background: #00cbfa;
+      border-color: #00a9d1;
+    }
+
+    .color-swatch.today {
+      background: #799fbf;
+      border-color: #5f86a8;
+    }
+
+    .color-swatch.brazil {
+      background: #fff7d9;
+      border-color: #ead289;
     }
 
     .round {
@@ -490,6 +541,11 @@
     </div>
 
     <p class="legend"><strong>* Grupo Globo:</strong> Globo, ge tv, Globoplay e SporTV. <em>3ª rodada:</em> partidas simultâneas marcadas como alternativas de transmissão a definir.</p>
+    <div class="color-legend" aria-label="Legenda das cores dos jogos">
+      <span class="color-legend-item"><span class="color-swatch past" aria-hidden="true"></span>Jogos passados</span>
+      <span class="color-legend-item"><span class="color-swatch today" aria-hidden="true"></span>Jogos do dia</span>
+      <span class="color-legend-item"><span class="color-swatch brazil" aria-hidden="true"></span>Jogos da Seleção Brasileira</span>
+    </div>
     <section id="grupos">
       <h2>Fase de grupos</h2>
       <div class="table-wrap">
@@ -687,9 +743,24 @@
 
     document.querySelectorAll('tbody tr').forEach((row) => {
       const dateCell = row.querySelector('td[data-date]');
+      const timeCell = dateCell?.nextElementSibling;
 
       if (dateCell?.dataset.date === currentDate) {
         row.classList.add('today-match');
+      }
+
+      const dateParts = dateCell?.dataset.date.split('/');
+      const timeMatch = timeCell?.textContent.trim().match(/^(\d{1,2})h(?:(\d{2}))?$/);
+
+      if (dateParts?.length === 3 && timeMatch) {
+        const [day, month, year] = dateParts;
+        const hour = timeMatch[1].padStart(2, '0');
+        const minute = timeMatch[2] ?? '00';
+        const matchDate = new Date(`${year}-${month}-${day}T${hour}:${minute}:00-03:00`);
+
+        if (matchDate < today) {
+          row.classList.add('past-match');
+        }
       }
     });
 
