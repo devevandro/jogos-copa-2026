@@ -764,6 +764,22 @@
       }
     });
 
+    document.querySelectorAll('tbody').forEach((tbody) => {
+      const rows = [...tbody.querySelectorAll(':scope > tr')];
+      const todayRows = rows.filter((row) => row.classList.contains('today-match'));
+      const todayRowsAlreadyFirst = todayRows.every((row, index) => rows[index] === row);
+
+      if (todayRows.length && !todayRowsAlreadyFirst) {
+        const featuredRows = todayRows.map((row) => {
+          const clone = row.cloneNode(true);
+          clone.dataset.todayFeatured = 'true';
+          return clone;
+        });
+
+        tbody.prepend(...featuredRows);
+      }
+    });
+
     const navLinks = [...document.querySelectorAll('.filters a')];
     const sections = navLinks
       .map((link) => document.querySelector(link.getAttribute('href')))
