@@ -178,23 +178,6 @@
       white-space: nowrap;
     }
 
-    .tag.group {
-      background: var(--green);
-    }
-
-    .tag.group-a { background: #0b6b4b; }
-    .tag.group-b { background: #1f5a8a; }
-    .tag.group-c { background: #b4332d; }
-    .tag.group-d { background: #7a3d8a; }
-    .tag.group-e { background: #c46b16; }
-    .tag.group-f { background: #287271; }
-    .tag.group-g { background: #8a5a19; }
-    .tag.group-h { background: #335c67; }
-    .tag.group-i { background: #6b705c; }
-    .tag.group-j { background: #9a031e; }
-    .tag.group-k { background: #3d405b; }
-    .tag.group-l { background: #006d77; }
-
     .tag.knockout {
       background: var(--red);
     }
@@ -230,15 +213,6 @@
     .today-match .match {
       color: #071b2a;
       font-weight: 850;
-    }
-
-    .past-match td {
-      background: #00cbfa;
-      border-bottom-color: #00a9d1;
-    }
-
-    .past-match .match {
-      color: #071b2a;
     }
 
     .source {
@@ -331,11 +305,6 @@
       flex: 0 0 18px;
       border: 1px solid transparent;
       border-radius: 4px;
-    }
-
-    .color-swatch.past {
-      background: #00cbfa;
-      border-color: #00a9d1;
     }
 
     .color-swatch.today {
@@ -435,35 +404,6 @@
         width: 62px;
       }
 
-      #grupos table {
-        min-width: 620px;
-      }
-
-      #grupos th:nth-child(1),
-      #grupos td:nth-child(1) {
-        width: 92px;
-      }
-
-      #grupos th:nth-child(2),
-      #grupos td:nth-child(2) {
-        width: 58px;
-      }
-
-      #grupos th:nth-child(3),
-      #grupos td:nth-child(3) {
-        width: 82px;
-      }
-
-      #grupos th:nth-child(4),
-      #grupos td:nth-child(4) {
-        width: 96px;
-      }
-
-      #grupos th:nth-child(6),
-      #grupos td:nth-child(6) {
-        width: 150px;
-      }
-
       #32avos table,
       #oitavas table,
       #quartas table,
@@ -485,10 +425,6 @@
 
       table {
         min-width: 760px;
-      }
-
-      #grupos table {
-        min-width: 660px;
       }
 
       #32avos table,
@@ -524,14 +460,13 @@
 <body>
   <header>
     <h1>Copa do Mundo FIFA 2026</h1>
-    <p>Tabela consolidada com os 104 jogos: fase de grupos, 32-avos, oitavas, quartas, semifinais, disputa de terceiro lugar e final. Horários em Brasília.</p>
+    <p>Tabela consolidada com os jogos restantes do mata-mata: 32-avos, oitavas, quartas, semifinais, disputa de terceiro lugar e final. Horários em Brasília.</p>
   </header>
 
   <main>
 
     <div class="toolbar">
       <nav class="filters" aria-label="Atalhos por fase">
-        <a href="#grupos">Fase de grupos</a>
         <a href="#32avos">32-avos</a>
         <a href="#oitavas">Oitavas</a>
         <a href="#quartas">Quartas</a>
@@ -540,103 +475,10 @@
       </nav>
     </div>
 
-    <p class="legend"><strong>* Grupo Globo:</strong> Globo, ge tv, Globoplay e SporTV. <em>3ª rodada:</em> partidas simultâneas marcadas como alternativas de transmissão a definir.</p>
     <div class="color-legend" aria-label="Legenda das cores dos jogos">
-      <span class="color-legend-item"><span class="color-swatch past" aria-hidden="true"></span>Jogos passados</span>
       <span class="color-legend-item"><span class="color-swatch today" aria-hidden="true"></span>Jogos do dia</span>
       <span class="color-legend-item"><span class="color-swatch brazil" aria-hidden="true"></span>Jogos da Seleção Brasileira</span>
     </div>
-    <section id="grupos">
-      <h2>Fase de grupos</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>              <th>Data</th>
-              <th>Hora</th>
-              <th>Grupo</th>
-              <th>Rodada</th>
-              <th>Confronto</th>
-              <th>Transmissão</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td data-date="11/06/2026">11/06 Quinta-Feira</td><td>16h</td><td><span class="tag group group-a">Grupo A</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇲🇽 MEX 2 x 0 🇿🇦 RSA</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="11/06/2026">11/06 Quinta-Feira</td><td>23h</td><td><span class="tag group group-a">Grupo A</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇰🇷 KOR 2 x 1 🇨🇿 CZE</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="12/06/2026">12/06 Sexta-Feira</td><td>16h</td><td><span class="tag group group-b">Grupo B</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇨🇦 CAN 1 x 1 🇧🇦 BIH</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="12/06/2026">12/06 Sexta-Feira</td><td>22h</td><td><span class="tag group group-d">Grupo D</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇺🇸 USA 4 x 1 🇵🇾 PAR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="13/06/2026">13/06 Sábado</td><td>16h</td><td><span class="tag group group-b">Grupo B</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇶🇦 QAT 1 x 1 🇨🇭 SUI</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr class="brazil-match"><td data-date="13/06/2026">13/06 Sábado</td><td>19h</td><td><span class="tag group group-c">Grupo C</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇧🇷 BRA 1 x 1 🇲🇦 MAR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="13/06/2026">13/06 Sábado</td><td>22h</td><td><span class="tag group group-c">Grupo C</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇭🇹 HAI 0 x 0 🏴󠁧󠁢󠁳󠁣󠁴󠁿 SCO</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="14/06/2026">14/06 Domingo</td><td>1h</td><td><span class="tag group group-d">Grupo D</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇦🇺 AUS 2 x 0 🇹🇷 TUR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="14/06/2026">14/06 Domingo</td><td>14h</td><td><span class="tag group group-e">Grupo E</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇩🇪 GER 7 x 1 🇨🇼 CUW</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="14/06/2026">14/06 Domingo</td><td>17h</td><td><span class="tag group group-f">Grupo F</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇳🇱 NED 1 x 1 🇯🇵 JPN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="14/06/2026">14/06 Domingo</td><td>20h</td><td><span class="tag group group-e">Grupo E</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇨🇮 CIV 1 x 0 🇪🇨 ECU</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="14/06/2026">14/06 Domingo</td><td>23h</td><td><span class="tag group group-f">Grupo F</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇸🇪 SWE 5 x 1 🇹🇳 TUN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="15/06/2026">15/06 Segunda-Feira</td><td>13h</td><td><span class="tag group group-h">Grupo H</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇪🇸 ESP 0 x 0 🇨🇻 CPV</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="15/06/2026">15/06 Segunda-Feira</td><td>16h</td><td><span class="tag group group-g">Grupo G</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇧🇪 BEL 1 x 1 🇪🇬 EGY</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="15/06/2026">15/06 Segunda-Feira</td><td>19h</td><td><span class="tag group group-h">Grupo H</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇸🇦 KSA 1 x 1 🇺🇾 URU</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="15/06/2026">15/06 Segunda-Feira</td><td>22h</td><td><span class="tag group group-g">Grupo G</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇮🇷 IRN 2 x 2 🇳🇿 NZL</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="16/06/2026">16/06 Terça-Feira</td><td>16h</td><td><span class="tag group group-i">Grupo I</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇫🇷 FRA 3 x 1 🇸🇳 SEN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="16/06/2026">16/06 Terça-Feira</td><td>19h</td><td><span class="tag group group-i">Grupo I</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇮🇶 IRQ 1 x 4 🇳🇴 NOR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="16/06/2026">16/06 Terça-Feira</td><td>22h</td><td><span class="tag group group-j">Grupo J</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇦🇷 ARG 3 x 0 🇩🇿 ALG</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="17/06/2026">17/06 Quarta-Feira</td><td>1h</td><td><span class="tag group group-j">Grupo J</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇦🇹 AUT 3 x 1 🇯🇴 JOR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="17/06/2026">17/06 Quarta-Feira</td><td>14h</td><td><span class="tag group group-k">Grupo K</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇵🇹 POR 1 x 1 🇨🇩 COD</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="17/06/2026">17/06 Quarta-Feira</td><td>17h</td><td><span class="tag group group-l">Grupo L</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG 4 x 2 🇭🇷 CRO</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="17/06/2026">17/06 Quarta-Feira</td><td>20h</td><td><span class="tag group group-l">Grupo L</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇬🇭 GHA 1 x 0 🇵🇦 PAN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="17/06/2026">17/06 Quarta-Feira</td><td>21h</td><td><span class="tag group group-k">Grupo K</span></td><td><span class="round round-1">1ª rodada</span></td><td class="match">🇺🇿 UZB 1 x 3 🇨🇴 COL</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="18/06/2026">18/06 Quinta-Feira</td><td>13h</td><td><span class="tag group group-a">Grupo A</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇨🇿 CZE 1 x 1 🇿🇦 RSA</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="18/06/2026">18/06 Quinta-Feira</td><td>16h</td><td><span class="tag group group-b">Grupo B</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇨🇭 SUI 4 x 1 🇧🇦 BIH</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="18/06/2026">18/06 Quinta-Feira</td><td>19h</td><td><span class="tag group group-b">Grupo B</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇨🇦 CAN 6 x 0 🇶🇦 QAT</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="18/06/2026">18/06 Quinta-Feira</td><td>22h</td><td><span class="tag group group-a">Grupo A</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇲🇽 MEX 1 x 0 🇰🇷 KOR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="19/06/2026">19/06 Sexta-Feira</td><td>0h</td><td><span class="tag group group-d">Grupo D</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇹🇷 TUR 0 x 1 🇵🇾 PAR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="19/06/2026">19/06 Sexta-Feira</td><td>16h</td><td><span class="tag group group-d">Grupo D</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇺🇸 USA 2 x 0 🇦🇺 AUS</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="19/06/2026">19/06 Sexta-Feira</td><td>19h</td><td><span class="tag group group-c">Grupo C</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🏴󠁧󠁢󠁳󠁣󠁴󠁿 SCO 0 x 1 🇲🇦 MAR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr class="brazil-match"><td data-date="19/06/2026">19/06 Sexta-Feira</td><td>21h30</td><td><span class="tag group group-c">Grupo C</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇧🇷 BRA 3 x 0 🇭🇹 HAI</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="20/06/2026">20/06 Sábado</td><td>14h</td><td><span class="tag group group-f">Grupo F</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇳🇱 NED 5 x 1 🇸🇪 SWE</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="20/06/2026">20/06 Sábado</td><td>17h</td><td><span class="tag group group-e">Grupo E</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇩🇪 GER 2 x 1 🇨🇮 CIV</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="20/06/2026">20/06 Sábado</td><td>21h</td><td><span class="tag group group-e">Grupo E</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇪🇨 ECU 0 x 0 🇨🇼 CUW</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="20/06/2026">20/06 Sábado</td><td>23h</td><td><span class="tag group group-f">Grupo F</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇹🇳 TUN 0 x 4 🇯🇵 JPN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="21/06/2026">21/06 Domingo</td><td>13h</td><td><span class="tag group group-h">Grupo H</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇪🇸 ESP 4 x 0 🇸🇦 KSA</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="21/06/2026">21/06 Domingo</td><td>16h</td><td><span class="tag group group-g">Grupo G</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇧🇪 BEL 0 x 0 🇮🇷 IRN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="21/06/2026">21/06 Domingo</td><td>19h</td><td><span class="tag group group-h">Grupo H</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇺🇾 URU 2 x 2 🇨🇻 CPV</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="21/06/2026">21/06 Domingo</td><td>22h</td><td><span class="tag group group-g">Grupo G</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇳🇿 NZL 1 x 3 🇪🇬 EGY</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="22/06/2026">22/06 Segunda-Feira</td><td>14h</td><td><span class="tag group group-j">Grupo J</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇦🇷 ARG 2 x 0 🇦🇹 AUT</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="22/06/2026">22/06 Segunda-Feira</td><td>18h</td><td><span class="tag group group-i">Grupo I</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇫🇷 FRA 3 x 0 🇮🇶 IRQ</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="22/06/2026">22/06 Segunda-Feira</td><td>21h</td><td><span class="tag group group-i">Grupo I</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇳🇴 NOR 3 x 2 🇸🇳 SEN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="23/06/2026">23/06 Terça-Feira</td><td>0h</td><td><span class="tag group group-j">Grupo J</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇯🇴 JOR 1 x 2 🇩🇿 ALG</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="23/06/2026">23/06 Terça-Feira</td><td>14h</td><td><span class="tag group group-k">Grupo K</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇵🇹 POR 5 x 0 🇺🇿 UZB</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="23/06/2026">23/06 Terça-Feira</td><td>17h</td><td><span class="tag group group-l">Grupo L</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG 0 x 0 🇬🇭 GHA</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="23/06/2026">23/06 Terça-Feira</td><td>20h</td><td><span class="tag group group-l">Grupo L</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇵🇦 PAN 0 x 1 🇭🇷 CRO</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="23/06/2026">23/06 Terça-Feira</td><td>23h</td><td><span class="tag group group-k">Grupo K</span></td><td><span class="round round-2">2ª rodada</span></td><td class="match">🇨🇴 COL 1 x 0 🇨🇩 COD</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="24/06/2026">24/06 Quarta-Feira</td><td>16h</td><td><span class="tag group group-b">Grupo B</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇨🇭 SUI 2 x 1 🇨🇦 CAN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="24/06/2026">24/06 Quarta-Feira</td><td>16h</td><td><span class="tag group group-b">Grupo B</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇧🇦 BIH 3 x 1 🇶🇦 QAT</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr class="brazil-match"><td data-date="24/06/2026">24/06 Quarta-Feira</td><td>19h</td><td><span class="tag group group-c">Grupo C</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🏴󠁧󠁢󠁳󠁣󠁴󠁿 SCO 0 x 3 🇧🇷 BRA</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span><img src="images/SBT_2014.webp" alt="SBT"><img src="images/channels4_profile.jpg" alt="NSports"></div></td></tr>
-            <tr><td data-date="24/06/2026">24/06 Quarta-Feira</td><td>19h</td><td><span class="tag group group-c">Grupo C</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇲🇦 MAR 4 x 2 🇭🇹 HAI</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="24/06/2026">24/06 Quarta-Feira</td><td>22h</td><td><span class="tag group group-a">Grupo A</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇨🇿 CZE 0 x 3 🇲🇽 MEX</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="24/06/2026">24/06 Quarta-Feira</td><td>22h</td><td><span class="tag group group-a">Grupo A</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇿🇦 RSA 1 x 0 🇰🇷 KOR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="25/06/2026">25/06 Quinta-Feira</td><td>17h</td><td><span class="tag group group-e">Grupo E</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇪🇨 ECU 2 x 1 🇩🇪 GER</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="25/06/2026">25/06 Quinta-Feira</td><td>17h</td><td><span class="tag group group-e">Grupo E</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇨🇼 CUW 0 x 2 🇨🇮 CIV</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="25/06/2026">25/06 Quinta-Feira</td><td>20h</td><td><span class="tag group group-f">Grupo F</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇯🇵 JPN 1 x 1 🇸🇪 SWE</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="25/06/2026">25/06 Quinta-Feira</td><td>20h</td><td><span class="tag group group-f">Grupo F</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇹🇳 TUN 1 x 3 🇳🇱 NED</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="25/06/2026">25/06 Quinta-Feira</td><td>23h</td><td><span class="tag group group-d">Grupo D</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇹🇷 TUR 3 x 2 🇺🇸 USA</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="25/06/2026">25/06 Quinta-Feira</td><td>23h</td><td><span class="tag group group-d">Grupo D</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇵🇾 PAR 0 x 0 🇦🇺 AUS</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="26/06/2026">26/06 Sexta-Feira</td><td>16h</td><td><span class="tag group group-i">Grupo I</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇳🇴 NOR x 🇫🇷 FRA</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="26/06/2026">26/06 Sexta-Feira</td><td>16h</td><td><span class="tag group group-i">Grupo I</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇸🇳 SEN x 🇮🇶 IRQ</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="26/06/2026">26/06 Sexta-Feira</td><td>21h</td><td><span class="tag group group-h">Grupo H</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇨🇻 CPV x 🇸🇦 KSA</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="26/06/2026">26/06 Sexta-Feira</td><td>21h</td><td><span class="tag group group-h">Grupo H</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇺🇾 URU x 🇪🇸 ESP</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="27/06/2026">27/06 Sábado</td><td>0h</td><td><span class="tag group group-g">Grupo G</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇪🇬 EGY x 🇮🇷 IRN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="27/06/2026">27/06 Sábado</td><td>0h</td><td><span class="tag group group-g">Grupo G</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇳🇿 NZL x 🇧🇪 BEL</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="27/06/2026">27/06 Sábado</td><td>18h</td><td><span class="tag group group-l">Grupo L</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇵🇦 PAN x 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="27/06/2026">27/06 Sábado</td><td>18h</td><td><span class="tag group group-l">Grupo L</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇭🇷 CRO x 🇬🇭 GHA</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="27/06/2026">27/06 Sábado</td><td>20h30</td><td><span class="tag group group-k">Grupo K</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇨🇴 COL x 🇵🇹 POR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="27/06/2026">27/06 Sábado</td><td>20h30</td><td><span class="tag group group-k">Grupo K</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇨🇩 COD x 🇺🇿 UZB</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="27/06/2026">27/06 Sábado</td><td>23h</td><td><span class="tag group group-j">Grupo J</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇩🇿 ALG x 🇦🇹 AUT</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-            <tr><td data-date="27/06/2026">27/06 Sábado</td><td>23h</td><td><span class="tag group group-j">Grupo J</span></td><td><span class="round round-3">3ª rodada</span></td><td class="match">🇯🇴 JOR x 🇦🇷 ARG</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"><img src="images/Globo-300-1024x576.png" alt="Grupo Globo"><span class="asterisk" aria-label="Observação do Grupo Globo">*</span></div></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
     <section id="32avos">
       <h2>Fase de 32-avos</h2>
       <div class="table-wrap">
@@ -644,22 +486,22 @@
           <thead><tr><th>Data</th><th>Hora</th><th>Fase</th><th>Confronto</th>
               <th>Transmissão</th></tr></thead>
           <tbody>
-            <tr><td data-date="28/06/2026">28/06 Domingo</td><td>16h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇿🇦 RSA x 🇨🇦 CAN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="29/06/2026">29/06 Segunda-Feira</td><td>17h30</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇩🇪 GER x 3º dos Grupos A/B/C/D/F</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="28/06/2026">28/06 Domingo</td><td>16h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇿🇦 RSA 0 x 1 🇨🇦 CAN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr class="brazil-match"><td data-date="29/06/2026">29/06 Segunda-Feira</td><td>14h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇧🇷 BRA x 🇯🇵 JPN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="29/06/2026">29/06 Segunda-Feira</td><td>17h30</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇩🇪 GER x 🇵🇾 PAR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
             <tr><td data-date="29/06/2026">29/06 Segunda-Feira</td><td>22h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇳🇱 NED x 🇲🇦 MAR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="29/06/2026">29/06 Segunda-Feira</td><td>14h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇧🇷 BRA x 🇯🇵 JPN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="30/06/2026">30/06 Terça-Feira</td><td>18h</td><td><span class="tag knockout">32-avos</span></td><td class="match">1º Grupo I x 3º dos Grupos C/D/F/G/H</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="30/06/2026">30/06 Terça-Feira</td><td>14h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇨🇮 CIV x 2º Grupo I</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="30/06/2026">30/06 Terça-Feira</td><td>22h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇲🇽 MEX x 3º dos Grupos C/E/F/H/I</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="01/07/2026">01/07 Quarta-Feira</td><td>13h</td><td><span class="tag knockout">32-avos</span></td><td class="match">1º Grupo L x 3º dos Grupos E/H/I/J/K</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="30/06/2026">30/06 Terça-Feira</td><td>18h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇫🇷 FRA x 🇸🇪 SWE</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="30/06/2026">30/06 Terça-Feira</td><td>14h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇨🇮 CIV x 🇳🇴 NOR</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="30/06/2026">30/06 Terça-Feira</td><td>22h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇲🇽 MEX x 🇪🇨 ECU</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="01/07/2026">01/07 Quarta-Feira</td><td>13h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG x 🇨🇩 COD</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
             <tr><td data-date="01/07/2026">01/07 Quarta-Feira</td><td>21h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇺🇸 USA x 🇧🇦 BIH</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="01/07/2026">01/07 Quarta-Feira</td><td>17h</td><td><span class="tag knockout">32-avos</span></td><td class="match">1º Grupo G x 3º dos Grupos A/E/H/I/J</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="02/07/2026">02/07 Quinta-Feira</td><td>20h</td><td><span class="tag knockout">32-avos</span></td><td class="match">2º Grupo K x 2º Grupo L</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="02/07/2026">02/07 Quinta-Feira</td><td>16h</td><td><span class="tag knockout">32-avos</span></td><td class="match">1º Grupo H x 2º Grupo J</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="03/07/2026">03/07 Sexta-Feira</td><td>0h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇨🇭 SUI x 3º dos Grupos E/F/G/I/J</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="03/07/2026">03/07 Sexta-Feira</td><td>19h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇦🇷 ARG x 2º Grupo H</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="03/07/2026">03/07 Sexta-Feira</td><td>22h30</td><td><span class="tag knockout">32-avos</span></td><td class="match">1º Grupo K x 3º dos Grupos D/E/I/J/L</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="03/07/2026">03/07 Sexta-Feira</td><td>15h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇦🇺 AUS x 2º Grupo G</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="01/07/2026">01/07 Quarta-Feira</td><td>17h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇧🇪 BEL x 🇸🇳 SEN</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="02/07/2026">02/07 Quinta-Feira</td><td>20h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇵🇹 POR x 🇭🇷 CRO</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="02/07/2026">02/07 Quinta-Feira</td><td>16h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇪🇸 ESP x 🇦🇹 AUT</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="03/07/2026">03/07 Sexta-Feira</td><td>0h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇨🇭 SUI x 🇩🇿 ALG</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="03/07/2026">03/07 Sexta-Feira</td><td>19h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇦🇷 ARG x 🇨🇻 CPV</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="03/07/2026">03/07 Sexta-Feira</td><td>22h30</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇨🇴 COL x 🇬🇭 GHA</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="03/07/2026">03/07 Sexta-Feira</td><td>15h</td><td><span class="tag knockout">32-avos</span></td><td class="match">🇦🇺 AUS x 🇪🇬 EGY</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
           </tbody>
         </table>
       </div>
@@ -673,7 +515,7 @@
               <th>Transmissão</th></tr></thead>
           <tbody>
             <tr><td data-date="04/07/2026">04/07 Sábado</td><td>18h</td><td><span class="tag knockout">Oitavas</span></td><td class="match">Vencedor J74 x Vencedor J77</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
-            <tr><td data-date="04/07/2026">04/07 Sábado</td><td>14h</td><td><span class="tag knockout">Oitavas</span></td><td class="match">Vencedor J73 x Vencedor J75</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
+            <tr><td data-date="04/07/2026">04/07 Sábado</td><td>14h</td><td><span class="tag knockout">Oitavas</span></td><td class="match">🇨🇦 CAN x Vencedor J75</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
             <tr><td data-date="05/07/2026">05/07 Domingo</td><td>17h</td><td><span class="tag knockout">Oitavas</span></td><td class="match">Vencedor J76 x Vencedor J78</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
             <tr><td data-date="05/07/2026">05/07 Domingo</td><td>21h</td><td><span class="tag knockout">Oitavas</span></td><td class="match">Vencedor J79 x Vencedor J80</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
             <tr><td data-date="06/07/2026">06/07 Segunda-Feira</td><td>16h</td><td><span class="tag knockout">Oitavas</span></td><td class="match">Vencedor J83 x Vencedor J84</td><td><div class="broadcast"><img src="images/cazetv-logo-848x477.webp" alt="CazéTV"></div></td></tr>
@@ -761,22 +603,6 @@
         if (matchDate < today) {
           row.classList.add('past-match');
         }
-      }
-    });
-
-    document.querySelectorAll('tbody').forEach((tbody) => {
-      const rows = [...tbody.querySelectorAll(':scope > tr')];
-      const todayRows = rows.filter((row) => row.classList.contains('today-match'));
-      const todayRowsAlreadyFirst = todayRows.every((row, index) => rows[index] === row);
-
-      if (todayRows.length && !todayRowsAlreadyFirst) {
-        const featuredRows = todayRows.map((row) => {
-          const clone = row.cloneNode(true);
-          clone.dataset.todayFeatured = 'true';
-          return clone;
-        });
-
-        tbody.prepend(...featuredRows);
       }
     });
 
